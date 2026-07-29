@@ -112,7 +112,7 @@ class ChangelogDialog(QDialog):
 class GuideDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle(f"Guida all'uso - {__version__}")
+        self.setWindowTitle(f"MasterGlass - Guida all'uso - {__version__}")
         self.resize(450, 350)
         self.setStyleSheet("background-color: #222; color: #fff;")
         
@@ -121,8 +121,8 @@ class GuideDialog(QDialog):
         self.text_browser.setStyleSheet("background-color: #333; color: white; border: none; font-family: sans-serif; font-size: 13px; padding: 10px;")
         
         html_content = f"""
-        <h2 style='color: #4CAF50;'>Guida all'uso ({__version__})</h2>
-        <p>Questo software ti permette di presentare immagini e video su un secondo schermo o in overlay in modo semplice ed elegante.</p>
+        <h2 style='color: #4CAF50;'>MasterGlass - Guida ({__version__})</h2>
+        <p>Questo software ti permette di mostrare e proiettare al tavolo da gioco (su uno schermo secondario dedicato ai giocatori o un proiettore) immagini, mappe, handouts e video d'atmosfera per le tue sessioni di GdR in modo rapido e sicuro, nascondendo le tue note di Master.</p>
         
         <h3 style='color: #e57373;'>1. Caricamento File (Drag & Drop)</h3>
         <p>Trascina immagini o file video nelle apposite aree della finestra di controllo:</p>
@@ -270,7 +270,7 @@ class DisplayWindow(QWidget):
 
     def __init__(self):
         super().__init__()
-        icon_path = resource_path("app_icon.png")
+        icon_path = resource_path("MasterGlass.png")
         if os.path.exists(icon_path):
             self.setWindowIcon(QIcon(icon_path))
         self.pixmaps = []
@@ -394,8 +394,8 @@ class ControlWindow(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle(f"Image Control {__version__}")
-        icon_path = resource_path("app_icon.png")
+        self.setWindowTitle(f"MasterGlass - Control Panel {__version__}")
+        icon_path = resource_path("MasterGlass.png")
         if os.path.exists(icon_path):
             self.setWindowIcon(QIcon(icon_path))
         self.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint)

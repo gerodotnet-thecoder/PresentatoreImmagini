@@ -28,9 +28,9 @@ def main():
         "--noconfirm",
         "--noconsole",
         "--onefile",
-        "--name", "Presentatore_Immagini",
-        "--icon", os.path.join(root_dir, "app_icon.ico"),
-        "--add-data", f"app_icon.png{os.pathsep}.",
+        "--name", "MasterGlass",
+        "--icon", os.path.join(root_dir, "MasterGlass.ico"),
+        "--add-data", f"MasterGlass.png{os.pathsep}.",
         "--distpath", output_dir,
         main_script
     ]

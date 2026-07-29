@@ -1,27 +1,27 @@
-# Presentatore Immagini
+# MasterGlass (Dark Glass)
 
 <p align="center">
-  <img src="app_icon.png" alt="Presentatore Immagini Logo" width="180" style="border-radius: 20%;" />
+  <img src="MasterGlass.png" alt="MasterGlass Logo" width="180" style="border-radius: 20%;" />
 </p>
 
-Un'applicazione desktop leggera e moderna in Python (gestita tramite PyQt6) progettata specificamente per mostrare immagini, foto e token (supporto trasparenze PNG multi-livello) su uno schermo secondario o in overlay.
+**MasterGlass** è un'applicazione desktop leggera, moderna e completamente portabile in Python (PyQt6), progettata specificamente per i **Game Master (GM)** e **Dungeon Master (DM)** che giocano di ruolo al tavolo (dal vivo o in sessioni ibride).
 
-Sviluppata per scenari come le partite di ruolo da tavolo (simil-Foundry VTT) o esibizioni in cui si ha necessità di gestire al volo i layout senza impazzire o fare alt-tab esagerati, mandando i contenuti su un secondo schermo "Presentazione" mantenendo il controllo sullo schermo del Master/Regista.
+Risolve un problema comune a molti Master: proiettare mappe, indizi (handouts), immagini di PNG o mostri su un secondo schermo dedicato ai giocatori (TV sul tavolo, proiettore o monitor a parete) in modo immediato e pulito, **senza svelare le proprie note segrete** e senza dover configurare complessi software VTT (Virtual Tabletop) locali o fare scomodi e rischiosi Alt-Tab.
 
 ---
 
 ## 🚀 Caratteristiche Principali
 
-* **Estetica Dark Glass:** Rilevazione automatica del secondo schermo con transizioni fluide e un elegante layout translucido "vetro fumé" scuro.
-* **Layout Smart Grid:** Trascina più immagini contemporaneamente e l'app le organizzerà in una griglia armonica adatta a ogni schermo (da 1 a infinite immagini).
+* **Estetica Dark Glass:** Rilevazione automatica del secondo schermo con transizioni fluide e un elegante sfondo translucido "vetro fumé" scuro, perfetto per esaltare immagini e token con trasparenze PNG.
+* **Layout Smart Grid:** Trascina più immagini contemporaneamente (es. la mappa del luogo e i ritratti dei nemici) e l'app le organizzerà in una griglia armonica adatta a ogni schermo (da 1 a infinite immagini).
 * **Drag & Drop Flessibile:** 
   * Supporto completo al trascinamento di file e cartelle da **Esplora Risorse (Explorer)**.
   * Supporto al trascinamento di immagini direttamente da **Browser Web** (nota: a causa delle protezioni di sicurezza o di formati non standard di alcuni siti, potrebbero verificarsi eccezioni su determinati portali).
 * **Copia & Incolla Intelligente:** Supporto alle scorciatoie da tastiera (`Ctrl+V` per sostituire del tutto la schermata, `Ctrl+Shift+V` per aggiungere elementi in coda) di immagini copiate negli appunti o di file da Windows Explorer.
-* **Supporto Video & Code:** Visualizzazione di video a schermo intero (MP4, AVI, MKV, ecc.) con gestione di code di riproduzione, riproduzione/replay immediato cliccando sulla miniatura della Regia, e congelamento dell'inquadratura sull'ultimo frame a fine riproduzione.
+* **Supporto Video & Atmosfere:** Proiezione di video d'atmosfera a schermo intero (MP4, AVI, MKV, ecc.) con gestione di code di riproduzione, riproduzione/replay immediato cliccando sulla miniatura della Regia, e congelamento dell'inquadratura sull'ultimo frame a fine riproduzione.
 * **Aree di Rilascio Separate (Aggiungi/Sostituisci):** Overlay grafico dinamico che appare durante il trascinamento per scegliere al volo se azzerare la presentazione o aggiungere elementi.
 * **Storico & Navigazione:** Un archivio sfogliabile integrato nella console di controllo per richiamare in un click le immagini proiettate in precedenza.
-* **Guida & Changelog Integrati:** Assistenza d'uso immediata e storico delle modifiche consultabili direttamente dai pulsanti dedicati nella schermata di controllo.
+* **Guida & Changelog Integrati:** Assistenza d'uso immediata e storico delle modifiche consultabili direttamente dai pulsanti dedicati nella schermata di controllo del Master.
 
 ---
 
@@ -35,7 +35,7 @@ Sviluppata per scenari come le partite di ruolo da tavolo (simil-Foundry VTT) o 
 
 ## 📦 Installazione e Avvio
 
-Non c'è bisogno di installare macro-programmi o inquinare il computer. Il progetto è completamente portabile.
+Il progetto è completamente portabile e non inquina il computer con installazioni di sistema.
 
 1. **Scarica il codice:** Clona questo repository o scarica l'archivio ZIP ed estrailo in una cartella a tua scelta.
 2. **Setup Iniziale:** Fai doppio clic sul file **`setup.bat`**.
@@ -49,21 +49,21 @@ Non c'è bisogno di installare macro-programmi o inquinare il computer. Il proge
 
 ---
 
-## 🖥️ Come Usare l'Applicazione
+## 🖥️ Come Usare MasterGlass al Tavolo
 
 L'applicazione si avvia sdoppiandosi in due finestre:
 
-1. **Finestra di Controllo (Regia)**: Rimane sempre in primo piano sullo schermo del Master/Regista. Ti permette di gestire le immagini attive, pulire la coda, visualizzare lo storico delle miniature e cambiare modalità.
+1. **Finestra di Controllo (Regia)**: Rimane sempre in primo piano sullo schermo del Master. Ti permette di gestire le immagini attive, pulire la coda, visualizzare lo storico delle miniature e cambiare modalità.
    * **Chiudere l'app:** Se chiudi la finestra di Controllo con la `X`, l'intera applicazione verrà terminata all'istante.
-2. **Finestra di Visualizzazione (Schermo)**: È lo schermo destinato al pubblico. Puoi passare tra due stati cliccando sul pulsante nella Finestra di Controllo:
+2. **Finestra di Visualizzazione (Schermo Giocatori)**: È lo schermo destinato ai giocatori. Puoi passare tra due stati cliccando sul pulsante nella Finestra di Controllo:
    * **Modalità TEST (Rossa)**: Si ancora sul lato destro dello schermo principale con i bordi di Windows per permetterti di provarla senza occupare tutta la scrivania.
-   * **Modalità PRESENTAZIONE (Verde)**: Si sposta automaticamente sul secondo schermo rilevato (es. proiettore o TV) a tutto schermo (senza bordi) oppure riempie il monitor principale.
+   * **Modalità PRESENTAZIONE (Verde)**: Si sposta automaticamente sul secondo schermo rilevato (es. la TV sul tavolo o il proiettore a parete) a tutto schermo (senza bordi) oppure riempie il monitor principale.
 
 ---
 
 ## 🤝 Contribuire
 
-I contributi sono sempre benvenuti! Se hai idee, correzioni di bug o miglioramenti:
+I contributi sono sempre benvenuti! Se hai idee, correzioni di bug o miglioramenti per rendere le sessioni dei Master ancora più epiche:
 
 1. Fai un Fork del progetto.
 2. Crea un branch per la tua feature (`git checkout -b feature/NuovaFeature`).
