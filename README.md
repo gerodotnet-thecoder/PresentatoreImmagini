@@ -4,8 +4,7 @@
   <img src="MasterGlass.png" alt="MasterGlass Logo" width="180" style="border-radius: 20%;" />
 </p>
 
-**MasterGlass** è un'applicazione desktop leggera, moderna e completamente portabile in Python (PyQt6), progettata specificamente per i **Master** di giochi di ruolo dal vivo o in sessioni ibride.
-
+**MasterGlass** è un'applicazione desktop leggera, moderna e completamente portabile in Python (PyQt6 Vibecoding/Antigravity), progettata specificamente per i **Master** di giochi di ruolo dal vivo o in sessioni ibride. 
 Risolve un problema comune a molti Master: proiettare mappe, indizi (handouts), immagini di PNG o mostri su un secondo schermo dedicato ai giocatori (TV sul tavolo, proiettore o monitor a parete) in modo immediato e pulito, senza dover usare software VTT locali o fare scomodi Alt-Tab o trascinamenti al "buio".
 
 La versione Eseguibile Portabile per Windows è presente nella sezione [Release](../../releases).
