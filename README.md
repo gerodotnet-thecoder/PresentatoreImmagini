@@ -8,7 +8,12 @@
 
 Risolve un problema comune a molti Master: proiettare mappe, indizi (handouts), immagini di PNG o mostri su un secondo schermo dedicato ai giocatori (TV sul tavolo, proiettore o monitor a parete) in modo immediato e pulito, senza dover usare software VTT locali o fare scomodi Alt-Tab o trascinamenti al "buio".
 
-La versione Eseguibile Portabile per Windows è presente nella sezione Release
+La versione Eseguibile Portabile per Windows è presente nella sezione [Release](../../releases).
+
+> [!WARNING]
+> **Avviso di sicurezza Windows SmartScreen (PC protetto da Windows):**
+> Essendo un progetto amatoriale ed open source, l'eseguibile compilato (`MasterGlass.exe`) **non dispone di una firma digitale** (a causa dei costi annuali di abbonamento per i certificati di firma pubblica).
+> Al primo avvio, Windows potrebbe mostrare un avviso di sicurezza blu. Per procedere, clicca su **"Ulteriori informazioni"** e successivamente sul pulsante **"Esegui comunque"**. Il codice sorgente è interamente consultabile in questo repository per massima trasparenza e sicurezza.
 
 <p align="center">
   <img src="ShowScreen\Screenshot 2026-07-29 110400.png" alt="MasterGlass Logo" width="180" style="border-radius: 20%;" /> 
