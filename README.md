@@ -12,13 +12,16 @@ Sviluppata per scenari come le partite di ruolo da tavolo (simil-Foundry VTT) o 
 
 ## 🚀 Caratteristiche Principali
 
-* **Estetica Dark Glass:** Rilevazione del secondo schermo con transizioni e overlay translucido "vetro fumé" scuro.
-* **Layout Smart Grid:** Trascina più immagini contemporaneamente e l'app le organizzerà automaticamente in una griglia armonica ed elegante (1, 2, 3, 4 o più elementi).
-* **Supporto Video & Code:** Visualizzazione di file video (MP4, AVI, MKV, ecc.) a tutto schermo, con replay automatico al click sulla miniatura e fermo immagine sull'ultimo frame.
-* **Aree Drop Separate (Aggiungi/Sostituisci):** Possibilità di trascinare file per sostituire l'intera presentazione corrente oppure accodare elementi a quelli già mostrati.
-* **Copia & Incolla Intelligente:** Supporto a scorciatoie da tastiera (`Ctrl+V` per sostituire, `Ctrl+Shift+V` per aggiungere) di immagini copiate dal web o file da Esplora File.
-* **Storico & Navigazione:** Un archivio sfogliabile all'interno della finestra di controllo per recuperare rapidamente le configurazioni di immagini precedentemente mostrate.
-* **Guida e Changelog integrati:** Finestre di documentazione accessibili direttamente dall'applicazione.
+* **Estetica Dark Glass:** Rilevazione automatica del secondo schermo con transizioni fluide e un elegante layout translucido "vetro fumé" scuro.
+* **Layout Smart Grid:** Trascina più immagini contemporaneamente e l'app le organizzerà in una griglia armonica adatta a ogni schermo (da 1 a infinite immagini).
+* **Drag & Drop Flessibile:** 
+  * Supporto completo al trascinamento di file e cartelle da **Esplora Risorse (Explorer)**.
+  * Supporto al trascinamento di immagini direttamente da **Browser Web** (nota: a causa delle protezioni di sicurezza o di formati non standard di alcuni siti, potrebbero verificarsi eccezioni su determinati portali).
+* **Copia & Incolla Intelligente:** Supporto alle scorciatoie da tastiera (`Ctrl+V` per sostituire del tutto la schermata, `Ctrl+Shift+V` per aggiungere elementi in coda) di immagini copiate negli appunti o di file da Windows Explorer.
+* **Supporto Video & Code:** Visualizzazione di video a schermo intero (MP4, AVI, MKV, ecc.) con gestione di code di riproduzione, riproduzione/replay immediato cliccando sulla miniatura della Regia, e congelamento dell'inquadratura sull'ultimo frame a fine riproduzione.
+* **Aree di Rilascio Separate (Aggiungi/Sostituisci):** Overlay grafico dinamico che appare durante il trascinamento per scegliere al volo se azzerare la presentazione o aggiungere elementi.
+* **Storico & Navigazione:** Un archivio sfogliabile integrato nella console di controllo per richiamare in un click le immagini proiettate in precedenza.
+* **Guida & Changelog Integrati:** Assistenza d'uso immediata e storico delle modifiche consultabili direttamente dai pulsanti dedicati nella schermata di controllo.
 
 ---
 

@@ -7,12 +7,19 @@ import re
 import math
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QHBoxLayout, QPushButton, QListWidget, QListWidgetItem, QDialog, QTextBrowser
 from PyQt6.QtCore import Qt, pyqtSignal, QUrl, QByteArray, QEvent
-from PyQt6.QtGui import QPainter, QColor, QPixmap, QImage, QPolygon
+from PyQt6.QtGui import QPainter, QColor, QPixmap, QImage, QPolygon, QIcon
 from PyQt6.QtCore import QPoint
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
 
 __version__ = "v2.2"
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, relative_path)
 
 valid_image_exts = ('.png', '.jpg', '.jpeg', '.bmp', '.webp', '.gif')
 valid_video_exts = ('.mp4', '.avi', '.mkv', '.mov', '.wmv', '.m4v')
@@ -263,6 +270,9 @@ class DisplayWindow(QWidget):
 
     def __init__(self):
         super().__init__()
+        icon_path = resource_path("app_icon.png")
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
         self.pixmaps = []
         self.is_presentation_mode = False
         
@@ -385,6 +395,9 @@ class ControlWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle(f"Image Control {__version__}")
+        icon_path = resource_path("app_icon.png")
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
         self.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint)
         self.setAcceptDrops(True)
         self.resize(350, 500)
