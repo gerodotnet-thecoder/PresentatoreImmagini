@@ -1,7 +1,7 @@
-# Presentatore Immagini (Dark Glass)
+# Presentatore Immagini
 
 <p align="center">
-  <img src="app_icon.jpg" alt="Presentatore Immagini Logo" width="180" style="border-radius: 20%;" />
+  <img src="app_icon.png" alt="Presentatore Immagini Logo" width="180" style="border-radius: 20%;" />
 </p>
 
 Un'applicazione desktop leggera e moderna in Python (gestita tramite PyQt6) progettata specificamente per mostrare immagini, foto e token (supporto trasparenze PNG multi-livello) su uno schermo secondario o in overlay.
